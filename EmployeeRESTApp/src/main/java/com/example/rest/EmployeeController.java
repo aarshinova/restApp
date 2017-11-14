@@ -39,7 +39,7 @@ public class EmployeeController {
         }
     }
 
-    // Get employees by lastName (Week 2)
+    // Get employees by lastName 
     @RequestMapping(method = RequestMethod.GET, value = "/lastname/{name}")
     public ResponseEntity getByLastName(@PathVariable String name) {
 
@@ -54,7 +54,7 @@ public class EmployeeController {
 
     }
 
-    // Get employee by title (Week 2)
+    // Get employee by title 
     @RequestMapping(method = RequestMethod.GET, value="/title/{title}")
     public ResponseEntity getByTitle(@PathVariable String title){
         List<Employee> match = null;
@@ -67,7 +67,7 @@ public class EmployeeController {
         }
     }
 
-    // Get employee by dept (Week 2)
+    // Get employee by dept 
     @RequestMapping(method = RequestMethod.GET, value="/dept/{dept}")
     public ResponseEntity getByDept(@PathVariable String dept){
         List<Employee> match = null;
@@ -102,7 +102,7 @@ public class EmployeeController {
         }
     }
 
-    // Delete a employee (Week 3)
+    // Delete a employee 
     @RequestMapping(method = RequestMethod.DELETE, value = "{id}")
     public ResponseEntity delete(@PathVariable long id) {
 
